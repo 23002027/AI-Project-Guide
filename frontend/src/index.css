@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #090D18;
+  --bg-sidebar: #0D1422;
+  --bg-card: #131D2E;
+  --bg-card-hover: #172439;
+  --border-color: #26344A;
+  --border-light: #334460;
+  --primary: #638BFF;
+  --primary-hover: #4d77f5;
+  --secondary: #9B7BFF;
+  --success: #27C995;
+  --warning: #F2B85B;
+  --danger: #FF5A79;
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #090D18;
+  color: #F8FAFC;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #090D18;
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090D18;
+}
+::-webkit-scrollbar-thumb {
+  background: #26344A;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334460;
+}
+
+/* Glass & Card Utilities */
+.workspace-card {
+  background-color: #131D2E;
+  border: 1px solid #26344A;
+  border-radius: 1rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.workspace-card-hover:hover {
+  border-color: #384d6d;
+  background-color: #162236;
+}
+
+.workspace-glass {
+  background: rgba(19, 29, 46, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #26344A;
+}

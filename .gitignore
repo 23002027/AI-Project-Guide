@@ -1,0 +1,51 @@
+# Environment and Secrets (CRITICAL: Never commit these)
+.env
+.env.local
+.env.*.local
+*.env
+*.bak
+*.phase*.bak
+
+# Python Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend
+node_modules/
+.next/
+out/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDE & OS Specific
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Generated Presentations & Temporary Artifacts
+backend/generated_presentations/
+backend/uploads/
+*.pptx
+
+# Database backups & temporary journals
+*.db-journal
+*.sqlite3-journal
+backend/data/*.bak
